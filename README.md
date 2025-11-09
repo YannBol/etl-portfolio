@@ -30,7 +30,7 @@ etl_portfolio/
    ├─ project1_finance_api/
    │  ├─ etl_finance.py
    │  ├─ schema_finance.sql
-   │  └─ README.md             # (optionnel, spécifique au projet)
+   │  └─ README.md          
    ├─ project2_weather_api/
    │  ├─ etl_weather.py
    │  ├─ schema_weather.sql
