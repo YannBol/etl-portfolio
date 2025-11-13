@@ -21,9 +21,9 @@ def get_db_connection():
     conn = psycopg2.connect(
         host="localhost",
         port="5432",
-        dbname="etl_portfolio",   # nom de base SANS accent
-        user="etl_user",          # utilisateur SANS accent
-        password="etl_password",  # mot de passe SANS accent
+        dbname="etl_portfolio",
+        user="etl_user", 
+        password="etl_password",
     )
     conn.autocommit = False
     return conn
