@@ -18,7 +18,6 @@ OPEN_METEO_API = "https://api.open-meteo.com/v1/forecast"
 
 
 def get_db_connection():
-    # ✅ Même logique que dans ton script finance qui fonctionne
     conn = psycopg2.connect(
         host="localhost",
         port="5432",
@@ -84,7 +83,6 @@ def load(df: pd.DataFrame, conn):
         print("No data to load.")
         return
 
-    # ✅ Correction : on évite to_records() pour ne pas avoir de np.float64 dans le SQL
     records = list(
         df[
             [
@@ -140,6 +138,6 @@ def run_etl_for_city(latitude: float, longitude: float):
 
 
 if __name__ == "__main__":
-    lat = float(os.getenv("CITY_LATITUDE", "48.8566"))   # Paris par défaut
+    lat = float(os.getenv("CITY_LATITUDE", "48.8566")) 
     lon = float(os.getenv("CITY_LONGITUDE", "2.3522"))
     run_etl_for_city(lat, lon)
