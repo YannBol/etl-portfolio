@@ -1,5 +1,3 @@
--- Schéma pour le projet ETL Météo
-
 CREATE TABLE IF NOT EXISTS daily_weather (
     date DATE NOT NULL,
     latitude NUMERIC(8,4) NOT NULL,
