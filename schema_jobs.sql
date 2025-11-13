@@ -1,5 +1,3 @@
--- Schéma pour le projet ETL Offres d'emploi (Web Scraping)
-
 CREATE TABLE IF NOT EXISTS job_offers (
     id SERIAL PRIMARY KEY,
     title TEXT NOT NULL,
